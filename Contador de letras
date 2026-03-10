@@ -1,0 +1,20 @@
+fruta = ('banana')
+qt_a = 0
+qt_b = 0
+qt_n = 0
+
+for i in range(len(fruta)):
+    if fruta[i] == 'a':
+        qt_a += 1
+    elif fruta[i] == 'n':
+        qt_n += 1
+    else:
+        qt_b += 1
+print(f'''
+     String Original: {fruta}
+     Nº de Elementos: {len(fruta)}
+     
+     Quantidade Total de "a": {qt_a}
+     Quantidade Total de "b": {qt_b}
+     Quantidade Total de "n": {qt_n}
+     ''')
