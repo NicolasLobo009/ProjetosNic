@@ -1,0 +1,9 @@
+import string
+texto = input("Digite algo (texto, palvra e etc.) que mostrarei quantos caracteres foram preenchidos.\nDigite aqui: ")
+palavras = texto.split()
+palavras = [p.strip(string.punctuation) for p in palavras]
+maior = max(palavras, key=len)
+menor = min(palavras, key=len)
+print(f'Quantidade de caracteres: {len(texto)}')
+print(f'Maior palavra: {maior}')
+print(f'Menor palavra: {menor}')
